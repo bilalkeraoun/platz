@@ -1,15 +1,24 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'v8.6.5',
-        'version' => '8.6.5.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'cafad026a2aab5b7ca49045c6796bf838c08a85e',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
     'versions' => array(
+        'arrilot/laravel-widgets' => array(
+            'pretty_version' => '3.13.1',
+            'version' => '3.13.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../arrilot/laravel-widgets',
+            'aliases' => array(),
+            'reference' => 'ae0e44ce625026ae71c6ab9259f89f13af227e37',
+            'dev_requirement' => false,
+        ),
         'asm89/stack-cors' => array(
             'pretty_version' => 'v2.0.3',
             'version' => '2.0.3.0',
@@ -39,6 +48,42 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'doctrine/cache' => array(
+            'pretty_version' => '2.1.1',
+            'version' => '2.1.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../doctrine/cache',
+            'aliases' => array(),
+            'reference' => '331b4d5dbaeab3827976273e9356b3b453c300ce',
+            'dev_requirement' => false,
+        ),
+        'doctrine/dbal' => array(
+            'pretty_version' => '2.13.4',
+            'version' => '2.13.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../doctrine/dbal',
+            'aliases' => array(),
+            'reference' => '2411a55a2a628e6d8dd598388ab13474802c7b6e',
+            'dev_requirement' => false,
+        ),
+        'doctrine/deprecations' => array(
+            'pretty_version' => 'v0.5.3',
+            'version' => '0.5.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../doctrine/deprecations',
+            'aliases' => array(),
+            'reference' => '9504165960a1f83cc1480e2be1dd0a0478561314',
+            'dev_requirement' => false,
+        ),
+        'doctrine/event-manager' => array(
+            'pretty_version' => '1.1.1',
+            'version' => '1.1.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../doctrine/event-manager',
+            'aliases' => array(),
+            'reference' => '41370af6a30faa9dc0368c4a6814d596e81aba7f',
+            'dev_requirement' => false,
         ),
         'doctrine/inflector' => array(
             'pretty_version' => '2.0.4',
@@ -370,11 +415,29 @@
                 0 => 'v8.68.1',
             ),
         ),
+        'intervention/image' => array(
+            'pretty_version' => '2.7.0',
+            'version' => '2.7.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../intervention/image',
+            'aliases' => array(),
+            'reference' => '9a8cc99d30415ec0b3f7649e1647d03a55698545',
+            'dev_requirement' => false,
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'larapack/doctrine-support' => array(
+            'pretty_version' => 'v0.1.9',
+            'version' => '0.1.9.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../larapack/doctrine-support',
+            'aliases' => array(),
+            'reference' => 'ab6e821c467704ae91a9a944e6ebdaad6a99a294',
+            'dev_requirement' => false,
         ),
         'laravel/framework' => array(
             'pretty_version' => 'v8.68.1',
@@ -386,12 +449,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'v8.6.5',
-            'version' => '8.6.5.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'cafad026a2aab5b7ca49045c6796bf838c08a85e',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -428,6 +491,15 @@
             'install_path' => __DIR__ . '/../laravel/tinker',
             'aliases' => array(),
             'reference' => 'c808a7227f97ecfd9219fbf913bad842ea854ddc',
+            'dev_requirement' => false,
+        ),
+        'laravel/ui' => array(
+            'pretty_version' => 'v3.3.0',
+            'version' => '3.3.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravel/ui',
+            'aliases' => array(),
+            'reference' => '07d725813350c695c779382cbd6dac0ab8665537',
             'dev_requirement' => false,
         ),
         'league/commonmark' => array(
@@ -733,8 +805,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -1209,6 +1281,15 @@
             'install_path' => __DIR__ . '/../symfony/var-dumper',
             'aliases' => array(),
             'reference' => 'eaaea4098be1c90c8285543e1356a09c8aa5c8da',
+            'dev_requirement' => false,
+        ),
+        'tcg/voyager' => array(
+            'pretty_version' => 'v1.5.1',
+            'version' => '1.5.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../tcg/voyager',
+            'aliases' => array(),
+            'reference' => '06396a9180b388e2969c8bea2d7a591e3f1f6b0b',
             'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(
