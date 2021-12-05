@@ -12,12 +12,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+ 
+// Route Par Défaut
+Route::get('/', [App\Http\Controllers\RessourcesController::class, 'index'])
+    ->name('homepage');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    
+// Route Liste Des Posts
+Route::get('/posts', [App\Http\Controllers\RessourcesController::class, 'index'])
+    ->name('posts.index'); 
 
 
+
+// Route Voyager
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
